@@ -6,12 +6,24 @@ test("renders learn react link", () => {
   render(<StringCalculatorUI />);
   const inputElement = screen.getByTestId("stringInputBox");
   expect(inputElement).toBeInTheDocument();
+  expect(inputElement).toHaveClass('m-20');
+  expect(inputElement).toHaveClass('border');
+  expect(inputElement).toHaveClass('border-gray-300');
+  expect(inputElement).toHaveClass('rounded-lg');
+  expect(inputElement).toHaveClass('p-3');
 });
 
 test("renders calculator button", () => {
   render(<StringCalculatorUI />);
   const buttonElement = screen.getByTestId("calculatorButton");
   expect(buttonElement).toBeInTheDocument();
+  expect(buttonElement).toHaveClass('bg-blue-500');
+  expect(buttonElement).toHaveClass('text-white');
+  expect(buttonElement).toHaveClass('font-semibold');
+  expect(buttonElement).toHaveClass('py-2');
+  expect(buttonElement).toHaveClass('px-4');
+  expect(buttonElement).toHaveClass('rounded-lg');
+  expect(buttonElement).toHaveClass('shadow-md');
 });
 
 test("gives the correct outpt for 1,2,3 ", () => {
