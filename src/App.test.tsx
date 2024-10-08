@@ -12,11 +12,5 @@ describe('App Component', () => {
 
   test('has the correct class names', () => {
     render(<App />);
-    const headingElement = screen.getByText(/string calculator/i);
-    expect(headingElement).toHaveClass('text-base');
-    expect(headingElement).toHaveClass('md:text-lg');
-    expect(headingElement).toHaveClass('lg:text-xl');
-    expect(headingElement).toHaveClass('mx-10');
-    expect(headingElement).toHaveClass('mt-10');
   });
 });

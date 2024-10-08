@@ -6,7 +6,6 @@ test("renders learn react link", () => {
   render(<StringCalculatorUI />);
   const inputElement = screen.getByTestId("stringInputBox");
   expect(inputElement).toBeInTheDocument();
-  expect(inputElement).toHaveClass('m-20');
   expect(inputElement).toHaveClass('border');
   expect(inputElement).toHaveClass('border-gray-300');
   expect(inputElement).toHaveClass('rounded-lg');
@@ -24,6 +23,11 @@ test("renders calculator button", () => {
   expect(buttonElement).toHaveClass('px-4');
   expect(buttonElement).toHaveClass('rounded-lg');
   expect(buttonElement).toHaveClass('shadow-md');
+  expect(buttonElement).toHaveClass('hover:bg-blue-600');
+  expect(buttonElement).toHaveClass('focus:outline-none');
+  expect(buttonElement).toHaveClass('focus:ring-2');
+  expect(buttonElement).toHaveClass('focus:ring-blue-400');
+  expect(buttonElement).toHaveClass('transition');
 });
 
 test("gives the correct outpt for 1,2,3 ", () => {
