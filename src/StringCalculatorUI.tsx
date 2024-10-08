@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import add  from "./StringCalculator";
+// import add  from "./StringCalculator";
 
 const StringCalculatorUI = () => {
 
